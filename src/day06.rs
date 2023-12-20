@@ -1,9 +1,9 @@
 use nom::bytes::complete::tag;
 use nom::character::complete::{digit1, space1};
-use nom::combinator::{map, map_res};
+use nom::combinator::map;
 use nom::multi::separated_list1;
 use nom::sequence::pair;
-use nom::{Finish, IResult};
+use nom::IResult;
 
 pub struct RaceLog {
     races: Vec<Race>,
